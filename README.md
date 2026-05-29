@@ -27,7 +27,7 @@ Database Name: employee_db
 Table: employee
 
 Columns:
-- id
+- id 
 - name
 - email
 - department
