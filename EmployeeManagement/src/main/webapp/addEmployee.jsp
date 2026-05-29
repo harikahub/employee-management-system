@@ -6,55 +6,37 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Employee</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
-<body class="bg-light">
 
-<div class="container mt-5">
+<body>
 
-    <div class="card shadow p-4">
+<h2>Add Employee</h2>
 
-        <h2 class="text-center mb-4">Add Employee</h2>
+<form action="addEmployee" method="post">
 
-        <form action="addEmployee" method="post">
+    Name:
+    <input type="text" name="name">
+    <br><br>
 
-            <div class="mb-3">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control">
-            </div>
+    Email:
+    <input type="email" name="email">
+    <br><br>
 
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control">
-            </div>
+    Department:
+    <input type="text" name="department">
+    <br><br>
 
-            <div class="mb-3">
-                <label>Department</label>
-                <input type="text" name="department" class="form-control">
-            </div>
+    Salary:
+    <input type="text" name="salary">
+    <br><br>
 
-            <div class="mb-3">
-                <label>Salary</label>
-                <input type="text" name="salary" class="form-control">
-            </div>
+    <input type="submit" value="Add Employee">
 
-            <button type="submit" class="btn btn-primary w-100">
-                Add Employee
-            </button>
+</form>
 
-        </form>
+<br>
 
-        <br>
-
-        <a href="viewEmployees" class="btn btn-success">
-            View Employees
-        </a>
-
-    </div>
-
-</div>
+<a href="viewEmployees">View Employees</a>
 
 </body>
 </html>
