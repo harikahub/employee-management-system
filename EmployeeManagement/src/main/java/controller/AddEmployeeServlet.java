@@ -13,6 +13,8 @@ import model.Employee;
 @WebServlet("/addEmployee")
 public class AddEmployeeServlet extends HttpServlet {
 
+    private static final long serialVersionUID = 1L;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -22,16 +24,18 @@ public class AddEmployeeServlet extends HttpServlet {
         double salary = Double.parseDouble(request.getParameter("salary"));
 
         Employee emp = new Employee();
+
         emp.setName(name);
         emp.setEmail(email);
         emp.setDepartment(department);
         emp.setSalary(salary);
 
         EmployeeDAO dao = new EmployeeDAO();
+
         int status = dao.addEmployee(emp);
 
         if (status > 0) {
-            response.getWriter().println("Employee Added Successfully");
+            response.sendRedirect("viewEmployees");
         } else {
             response.getWriter().println("Something went wrong");
         }
