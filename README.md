@@ -33,6 +33,10 @@ Columns:
 - department
 - salary
 
+SQL:
+
+CREATE DATABASE employee_db;
+
 ## Project Structure
 
 src/main/java
@@ -45,6 +49,20 @@ src/main/webapp
 - addEmployee.jsp
 - editEmployee.jsp
 - viewEmployees.jsp
+
+## Run the Project
+
+1. Clone the repository.
+2. Import the project as a Maven Project in Eclipse.
+3. Configure MySQL username and password in `DBConnection.java`.
+4. Right-click the project and select `Maven → Update Project`.
+5. Add the project to Apache Tomcat Server.
+6. Start the Tomcat Server.
+7. Open the application in browser:
+
+```text
+http://localhost:8080/EmployeeManagement/viewEmployees
+```
 
 ## Author
 Harika Akula
