@@ -35,7 +35,9 @@ Columns:
 
 SQL:
 
+```sql
 CREATE DATABASE employee_db;
+```
 
 ## Project Structure
 
